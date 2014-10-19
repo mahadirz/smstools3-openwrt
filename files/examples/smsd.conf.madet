@@ -5,12 +5,12 @@
 devices = GSM1
 logfile = /var/log/smsd.log
 loglevel = 5
-outgoing = /var/spool/sms/outgoing
-checked = /var/spool/sms/checked
-#failed = /var/spool/sms/failed
-incoming = /var/spool/sms/incoming
-#report = /var/spool/sms/report
-sent = /var/spool/sms/sent
+outgoing = /usr/share/smstools3/sms/outgoing
+checked = /usr/share/smstools3/sms/checked
+#failed = /usr/share/smstools3/sms/failed
+incoming = /usr/share/smstools3/sms/incoming
+#report = /usr/share/smstools3/sms/report
+sent = /usr/share/smstools3/sms/sent
 alarmlevel = 4
 delaytime = 10
 
