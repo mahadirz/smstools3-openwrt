@@ -61,10 +61,10 @@ endef
 
 define Package/smstools3/postinst
 #!/bin/sh
-mkdir -p /var/spool/sms/outgoing
-mkdir -p /var/spool/sms/incoming
-mkdir -p /var/spool/sms/sent
-mkdir -p /var/spool/sms/checked
+mkdir -p /usr/share/smstools3/sms/outgoing
+mkdir -p /usr/share/smstools3/sms/incoming
+mkdir -p /usr/share/smstools3/sms/sent
+mkdir -p /usr/share/smstools3/sms/checked
 chmod +x /etc/init.d/smstools3
 cp /usr/share/smstools3/examples/smsd.conf.madet /etc/smsd.conf
 cp /usr/share/smstools3/scripts/sendsms /usr/sbin/
@@ -87,11 +87,9 @@ endef
 define Package/smstools3/postrm
 #!/bin/sh
 echo cleaning...
-rm -fr /var/spool/sms
 rm -fr /usr/share/smstools3
 rm /var/log/smsd.log
 rm /etc/smsd.conf
-rm /usr/share/smstools3/scripts/sendsms
 endef
 
 $(eval $(call BuildPackage,smstools3))
