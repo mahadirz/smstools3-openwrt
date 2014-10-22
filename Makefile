@@ -51,7 +51,7 @@ define Package/smstools3/install
 	$(INSTALL_DATA) ./files/smstools3 $(1)/etc/init.d
 endef
 
-define Package/smstools3/
+define Package/smstools3/preinst
 #!/bin/sh
 echo SMS Tools 3 for OpenWrt
 echo Compiled By Mahadir Ahmad <mahadir@madet.my>
