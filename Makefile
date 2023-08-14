@@ -32,7 +32,7 @@ endef
 define Package/smstools3/description
  The SMS Server Tools 3 is a SMS Gateway 
  software which can send and receive short 
- messages through GSM modems and mobile phonesendef
+ messages through GSM modems and mobile phones
 endef
 
 define Build/Prepare
